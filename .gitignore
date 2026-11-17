@@ -1,0 +1,22 @@
+# secrets
+.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# python
+.venv/
+__pycache__/
+*.pyc
+uploads/
+
+# node
+node_modules/
+frontend/.next/
+frontend/.vercel/
+*.tsbuildinfo
+
+# misc
+.DS_Store
+.claude/
+temp*

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-weight: 300;
+    color: #0f172a;
+    background-color: #f5f5f7;
+  }
+
+  h1, h2 {
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 300;
+    color: #374151;
+  }
+
+  input, textarea, select, button {
+    font-family: inherit;
+  }
+}
+
+@keyframes section-in {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.animate-section-in {
+  animation: section-in 0.3s ease both;
+}
